@@ -7,8 +7,8 @@ import TicketManagement from '../pages/TicketManagement.vue';
 
 const routes = [
   { path: '/', name: 'Landing', component: Landing },
-  { path: '/login', name: 'Login', component: Login },
-  { path: '/signup', name: 'Signup', component: Signup },
+  { path: '/auth/login', name: 'Login', component: Login },
+  { path: '/auth/signup', name: 'Signup', component: Signup },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard, meta: { requiresAuth: true } },
   { path: '/tickets', name: 'Tickets', component: TicketManagement, meta: { requiresAuth: true } },
 ];
